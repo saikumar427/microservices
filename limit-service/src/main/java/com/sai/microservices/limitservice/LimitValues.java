@@ -10,7 +10,23 @@ public class LimitValues {
 	private int minimum;
 	private int maximum;
 	
-	public int getMinimum() {
+	/**
+   * @param minimum
+   * @param maximum
+   */
+	
+  public LimitValues(int minimum, int maximum) {
+    super();
+    this.minimum = minimum;
+    this.maximum = maximum;
+  }
+  /**
+   * 
+   */
+  public LimitValues() {
+    super();
+  }
+  public int getMinimum() {
 		return minimum;
 	}
 	public void setMinimum(int minimum) {
