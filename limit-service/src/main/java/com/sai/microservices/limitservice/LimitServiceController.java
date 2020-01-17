@@ -13,7 +13,6 @@ public class LimitServiceController {
 	private LimitValues limits;
 	@GetMapping("/limits")
 	public LimitValues getLimits(Boolean flag) {
-	  System.out.println("########################################## "+flag);
 		return limits;
 	}
 	

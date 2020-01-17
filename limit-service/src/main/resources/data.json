@@ -1,0 +1,228 @@
+{
+  "dateTimeGMT": "2020-01-17T08:00:00.000Z",
+  "type": "ODI",
+  "cache3": true,
+  "creditsLeft": 220,
+  "v": 1,
+  "ttl": 3,
+  "data": {
+    "toss_winner_team": "Australia",
+    "matchStarted": true,
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Rohit Sharma",
+            "pid": "34102"
+          },
+          {
+            "name": "Shikhar Dhawan",
+            "pid": "28235"
+          },
+          {
+            "name": "Virat Kohli",
+            "pid": "253802"
+          },
+          {
+            "name": "Shreyas Iyer",
+            "pid": "642519"
+          },
+          {
+            "name": "KL Rahul",
+            "pid": "422108"
+          },
+          {
+            "name": "Manish Pandey",
+            "pid": "290630"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "pid": "234675"
+          },
+          {
+            "name": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "name": "Kuldeep Yadav",
+            "pid": "559235"
+          },
+          {
+            "name": "Navdeep Saini",
+            "pid": "700167"
+          },
+          {
+            "name": "Jasprit Bumrah",
+            "pid": "625383"
+          }
+        ],
+        "name": "India"
+      },
+      {
+        "players": [
+          {
+            "name": "Aaron Finch",
+            "pid": "5334"
+          },
+          {
+            "name": "David Warner",
+            "pid": "219889"
+          },
+          {
+            "name": "Marnus Labuschagne",
+            "pid": "787987"
+          },
+          {
+            "name": "Steven Smith",
+            "pid": "267192"
+          },
+          {
+            "name": "Alex Carey",
+            "pid": "326434"
+          },
+          {
+            "name": "Ashton Turner",
+            "pid": "500268"
+          },
+          {
+            "name": "Ashton Agar",
+            "pid": "505120"
+          },
+          {
+            "name": "Pat Cummins",
+            "pid": "489889"
+          },
+          {
+            "name": "Mitchell Starc",
+            "pid": "311592"
+          },
+          {
+            "name": "Kane Richardson",
+            "pid": "272262"
+          },
+          {
+            "name": "Adam Zampa",
+            "pid": "379504"
+          }
+        ],
+        "name": "Australia"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal": "lbw",
+            "batsman": "RG Sharma",
+            "pid": "34102",
+            "detail": null,
+            "SR": 95,
+            "6s": 0,
+            "4s": 6,
+            "B": 44,
+            "R": 42,
+            "dismissal-info": "lbw b Zampa"
+          },
+          {
+            "dismissal": "catch",
+            "batsman": "S Dhawan",
+            "pid": "28235",
+            "detail": null,
+            "SR": 106,
+            "6s": 1,
+            "4s": 13,
+            "B": 90,
+            "R": 96,
+            "dismissal-info": "c Starc b Richardson"
+          },
+          {
+            "dismissal": "catch",
+            "batsman": "V Kohli (c)",
+            "pid": "253802",
+            "detail": null,
+            "SR": 102,
+            "6s": 0,
+            "4s": 6,
+            "B": 76,
+            "R": 78,
+            "dismissal-info": "c Starc b Zampa"
+          },
+          {
+            "dismissal": "bowled",
+            "batsman": "SS Iyer",
+            "pid": "642519",
+            "detail": null,
+            "SR": 41,
+            "6s": 0,
+            "4s": 1,
+            "B": 17,
+            "R": 7,
+            "dismissal-info": " b Zampa"
+          },
+          {
+            "dismissal": "runout",
+            "batsman": "KL Rahul  ",
+            "pid": "422108",
+            "detail": null,
+            "SR": 153,
+            "6s": 3,
+            "4s": 6,
+            "B": 52,
+            "R": 80,
+            "dismissal-info": "run out ( Carey)"
+          },
+          {
+            "dismissal": "catch",
+            "batsman": "MK Pandey",
+            "pid": "290630",
+            "detail": null,
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "B": 4,
+            "R": 2,
+            "dismissal-info": "c Agar b Richardson"
+          },
+          {
+            "dismissal": "not out",
+            "batsman": "RA Jadeja",
+            "pid": "234675",
+            "detail": null,
+            "SR": 125,
+            "6s": 0,
+            "4s": 1,
+            "B": 16,
+            "R": 20,
+            "dismissal-info": "not out"
+          },
+          {
+            "dismissal": "not out",
+            "batsman": "Mohammed Shami",
+            "pid": "481896",
+            "detail": null,
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "B": 1,
+            "R": 1,
+            "dismissal-info": "not out"
+          },
+          {
+            "dismissal": null,
+            "batsman": "Extras",
+            "pid": "0",
+            "detail": "14 (b 5, lb 4, w 5)",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "B": 0,
+            "R": 0,
+            "dismissal-info": ""
+          }
+        ],
+        "title": "India Innings"
+      }
+    ],
+    "man-of-the-match": ""
+  }
+}
