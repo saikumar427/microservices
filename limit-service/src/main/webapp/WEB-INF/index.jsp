@@ -11,15 +11,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 <div class="container">
   <h2>Cricket Score (${score.score}) </h2>
-
    <c:forEach items="${score_info.data.batting}" var="batting">
+   	   <div class="container">
    	   <h4>${batting.title}</h4>
 	   <c:forEach items="${batting.scores}" var="batman">
 		   <c:if test = "${batman.batsman != 'Extras'}"> 
-				   <div class="col-sm-3 list-group">
+				   <div class="col-sm-3 col-md-3 list-group">
 				    <a class="list-group-item active" <c:if test = "${batman.dismissal != 'not out'}"> style="background-color:#ff6969"</c:if>> ${batman.batsman}</a>
 				    <a class="list-group-item">RUNS : ${batman.runs}</a>
 				    <a class="list-group-item">Balls : ${batman.balls}</a>
@@ -28,13 +27,8 @@
 				  </div>
 			</c:if>
 	    </c:forEach> 
+	    </div>
     </c:forEach> 
-  
-  
-  
- 
-
 </div>
-
 </body>
 </html>
