@@ -3,6 +3,7 @@ package com.sai.microservices.limitservice;
 import java.io.IOException;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
+import com.sai.microservices.bean.ApiKeys;
 import com.sai.microservices.bean.Cricket;
 import com.sai.microservices.bean.ScoreInfo;
 
@@ -17,8 +19,8 @@ import com.sai.microservices.bean.ScoreInfo;
 public class CricketController {
 
 	private RestTemplate restTemplate;
-    private String matchId = "1187028";
-    private String apikey = "2HfgiCA51SdxPtwJdmXqHrg1dGt1";
+	@Autowired
+	private ApiKeys apiKeys;
     
 	@GetMapping("/score")
 	public Cricket getScore() throws JsonParseException, JsonMappingException, IOException {
@@ -56,7 +58,7 @@ public class CricketController {
     }
     
     private String generateUrl(String type) {
-    	return String.format("https://cricapi.com/api/%s?apikey=%s&unique_id=%s", type, apikey, matchId);
+    	return String.format("https://cricapi.com/api/%s?apikey=%s&unique_id=%s", type, apiKeys.getApikey(), apiKeys.getMatchId());
     }
     
 }
