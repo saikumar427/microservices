@@ -17,12 +17,14 @@ import com.sai.microservices.bean.ScoreInfo;
 public class CricketController {
 
 	private RestTemplate restTemplate;
-
+    private String matchId = "1187028";
+    private String apikey = "2HfgiCA51SdxPtwJdmXqHrg1dGt1";
+    
 	@GetMapping("/score")
 	public Cricket getScore() throws JsonParseException, JsonMappingException, IOException {
 		restTemplate = new RestTemplate();
-		String url = "https://cricapi.com/api/fantasySummary?apikey=2HfgiCA51SdxPtwJdmXqHrg1dGt1&unique_id=1187028";
-		Cricket forObject = restTemplate.getForObject(url, Cricket.class);
+		//String url = "https://cricapi.com/api/fantasySummary?apikey=2HfgiCA51SdxPtwJdmXqHrg1dGt1&unique_id=1187028";
+		Cricket forObject = restTemplate.getForObject(generateUrl("fantasySummary"), Cricket.class);
 		
 //		File file = new File("D:\\workspace\\practice\\microservices\\limit-service\\src\\main\\resources\\data.json");
 //		ObjectMapper objectMapper = new ObjectMapper();
@@ -34,8 +36,8 @@ public class CricketController {
     @RequestMapping("/")
     public String home(Map<String, Object> model) throws JsonParseException, JsonMappingException, IOException {
 		restTemplate = new RestTemplate();
-		String url = "https://cricapi.com/api/fantasySummary?apikey=2HfgiCA51SdxPtwJdmXqHrg1dGt1&unique_id=1187028";
-		Cricket forObject = restTemplate.getForObject(url, Cricket.class);
+		//String url = "https://cricapi.com/api/fantasySummary?apikey=2HfgiCA51SdxPtwJdmXqHrg1dGt1&unique_id=1187028";
+		Cricket forObject = restTemplate.getForObject(generateUrl("fantasySummary"), Cricket.class);
 		//System.out.println("Score "+forObject);
 		//String furl = "D:\\\\workspace\\\\practice\\\\microservices\\\\limit-service\\\\src\\\\main\\\\resources\\\\data.json";
 		//File file = new File(furl);
@@ -49,7 +51,12 @@ public class CricketController {
     
     private ScoreInfo getScoreInfo() {
 		restTemplate = new RestTemplate();
-		String url = "https://cricapi.com/api/cricketScore?apikey=2HfgiCA51SdxPtwJdmXqHrg1dGt1&unique_id=1187028";
-		return restTemplate.getForObject(url, ScoreInfo.class);
+		//String url = "https://cricapi.com/api/cricketScore?apikey=2HfgiCA51SdxPtwJdmXqHrg1dGt1&unique_id=1187028";
+		return restTemplate.getForObject(generateUrl("cricketScore"), ScoreInfo.class);
     }
+    
+    private String generateUrl(String type) {
+    	return String.format("https://cricapi.com/api/%s?apikey=%s&unique_id=%s", type, apikey, matchId);
+    }
+    
 }
