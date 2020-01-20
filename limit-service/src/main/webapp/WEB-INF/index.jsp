@@ -23,7 +23,7 @@
 				    <a class="list-group-item">RUNS : ${batman.runs}</a>
 				    <a class="list-group-item">Balls : ${batman.balls}</a>
 				    <a class="list-group-item">Status : ${batman.dismissal}</a>
-				    <a class="list-group-item">Dismissal info : ${batman.dismissal_info}</a>
+				    <a class="list-group-item" style="height:60px">Dismissal info : ${batman.dismissal_info}</a>
 				  </div>
 			</c:if>
 	    </c:forEach> 

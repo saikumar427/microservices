@@ -9,16 +9,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Data {
 
 	@JsonProperty("man-of-the-match")
-	private String man_of_the_match;
+	private Player man_of_the_match;
 	private String toss_winner_team;
 	private boolean matchStarted;
 	private List<Team> team;
 	private List<Batting> batting;
 	
-	public String getMan_of_the_match() {
+	public Player getMan_of_the_match() {
 		return man_of_the_match;
 	}
-	public void setMan_of_the_match(String man_of_the_match) {
+	public void setMan_of_the_match(Player man_of_the_match) {
 		this.man_of_the_match = man_of_the_match;
 	}
 	public String getToss_winner_team() {
